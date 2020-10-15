@@ -6,23 +6,24 @@
     <title>Camera</title>
     <style>
         * { margin:0px; padding: 0px; }
+        html { background-color: black; color:white; }
         div {
             display: inline-block; 
             font-family: "Lucida Console", Monaco, monospace;
-            letter-spacing: 0em;
-            line-height: 0.8em;
+            letter-spacing: 0.2em;
+            line-height: 1em;
             white-space: pre;
             /* font-size: 2.6vh; */
-            font-size: 1.3vh;
+            font-size: 0.8vh;
         }
     </style>
 </head>
 <body>
-    <video id="video" width="640" height="480" autoplay></video>
-    <canvas id="canvas" width="640" height="480"></canvas>
-
-    <div id='text'>
-    </div>
+    <button id='playpause'>Play/pause</button>
+    <input type="range" min="1" max="20" value='5' id="slider"><br />
+    <video id="video" width="640" height="480" style='display:none;'></video>
+    <canvas id="canvas" width="640" height="480" style='display:none;'></canvas>
+    <div id='text'></div>
 
     <script src="js/main.js"></script>
 </body>
