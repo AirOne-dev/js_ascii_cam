@@ -36,12 +36,12 @@ function anim() {
 
     msg = '';
 
-    for (let x = 0; x <= canvas1.width; x+=qualite) {
-        for (let y = 0; y <= canvas1.height; y+=qualite) {
+    for (let y = 0; y < canvas1.height; y+=qualite) {
+        for (let x = 0; x < canvas1.width; x+=qualite) {
             const element = Array[y];
-            let red = imageData.data[((x * (imageData.width * 4)) + (y * 4)) + 0]; // + 0 = rouge
-            let green = imageData.data[((x * (imageData.width * 4)) + (y * 4)) + 1]; // + 1 = vert
-            let blue = imageData.data[((x * (imageData.width * 4)) + (y * 4)) + 2];  // + 2 = bleu
+            let red = imageData.data[((y * (imageData.width * 4)) + (x * 4)) + 0]; // + 0 = rouge
+            let green = imageData.data[((y * (imageData.width * 4)) + (x * 4)) + 1]; // + 1 = vert
+            let blue = imageData.data[((y * (imageData.width * 4)) + (x * 4)) + 2];  // + 2 = bleu
 
             // let alpha = imageData.data[((x * (imageData.width * 4)) + (y * 4)) + 3]; // + 3 = alpha
             
