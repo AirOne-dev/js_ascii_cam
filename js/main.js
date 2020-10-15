@@ -3,8 +3,9 @@ let canvas1 = document.querySelector('#canvas');
 let text = document.querySelector('#text');
 let ctx1 = canvas1.getContext('2d');
 let animation;
-let qualite = 10; // plus on baisse cette valeur, plus on augmente la qualité (attention à la ram)
-let characters = (" .,:;i1tfLCG08@").split("");
+let qualite = 5; // plus on baisse cette valeur, plus on augmente la qualité (attention à la ram)
+// let characters = (" .,:;i1tfLCG08@").split("");
+let characters = ("@80GCLft1i;:,. ").split("");
 let msg = '';
 
 // Get access to the camera!
